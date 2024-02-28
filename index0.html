@@ -123,20 +123,30 @@ function triggerX()
 }
 </script>
 </head>
-	<body id="bodyId" style="background-color:#bababa" onload="javascript:downloadhen()">
-	<div id="headerId" style="color:#CC2010">
-	<h1>PS3 HEN Host BY Dark Space</h1>
-	<span style="color:#7b0a0a">Many thanks to All in Developers and Dark Space HOST</span><hr>
-	<h3>Supports 4.90 HFW Firmware</h3>
-	<span style="color:#FF1122"><h3>* If initialization fails, set Home Page to about:blank and bookmark this page or return from history. Start browser again, load this page directly, and try again *</font></h3>
-	</div><hr>
-	<p><button id="btnROP" type="button" onclick="initROP(true);" autofocus>Auto Install HEN</button> | Auto-Close Browser <input type="checkbox" id="auto_close" name="aclose" checked="checked" onclick="autoclose();"/><span id="dex_txt" style="visibility:hidden"> | DEX mode<input type="checkbox" id="dex" name="DEX" disabled="" onclick="dex();"/></span></p>
-	<p><button id="btnReset" type="button" onclick="disable_trigger();">Reset</button></span></p>
-	<div id="result" style="color:#CC2010"></div><br>
+<body id="bodyId" style="background-color: #f2f2f2; font-family: Arial, sans-serif;">
+	<div id="headerId" style="color: #e74c3c; text-align: center; padding: 20px;">
+		<h1 style="font-size: 36px; margin-bottom: 10px;">PS3 HEN Host BY Dark Space</h1>
+		<span style="color: #7b0a0a; font-size: 18px;">Many thanks to All in Developers and Dark Space HOST</span>
+		<hr style="border-top: 2px solid #e74c3c; margin: 20px auto;">
+		<h3 style="color: #e74c3c; font-size: 24px;">Supports 4.90 HFW Firmware</h3>
+		<span style="color: #FF1122; font-size: 14px;"><h3>* If initialization fails, set Home Page to about:blank and bookmark this page or return from history. Start browser again, load this page directly, and try again *</h3></span>
+	</div>
+	<hr style="border-top: 2px solid #e74c3c; margin: 20px auto;">
+	<p style="text-align: center;">
+		<button id="btnROP" type="button" onclick="initROP(true);" style="color: #ffffff; background-color: #e74c3c; border: none; padding: 10px 20px; font-size: 18px; border-radius: 5px;">Auto Install HEN</button>
+		| Auto-Close Browser <input type="checkbox" id="auto_close" name="aclose" checked="checked" onclick="autoclose();" style="vertical-align: middle;">
+		<span id="dex_txt" style="visibility:hidden;"> | DEX mode<input type="checkbox" id="dex" name="DEX" disabled="" onclick="dex();" style="vertical-align: middle;"></span>
+	</p>
+	<p style="text-align: center;">
+		<button id="btnReset" type="button" onclick="disable_trigger();" style="color: #ffffff; background-color: #e74c3c; border: none; padding: 10px 20px; font-size: 18px; border-radius: 5px;">Reset</button>
+	</p>
+	<div id="result" style="color: #e74c3c; text-align: center;"></div>
+	<br>
 	<div id="log"></div>
-	<div id="exploit" ></div>
+	<div id="exploit"></div>
 	<div id="trigger"></div>
 	<div id="footer"></div>
+</body>
 	<script>
 		writeEnvInfo();
 		ps3chk();
